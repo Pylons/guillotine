@@ -12,7 +12,7 @@ except IOError:
     README = CHANGES = ''
 
 setup(name='guillotine',
-      version='0.1dev1',
+      version='0.1',
       description=('A middleware for proper handling of HEAD requests.'),
       long_description=README + '\n\n' +  CHANGES,
       classifiers=[
