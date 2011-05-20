@@ -33,6 +33,8 @@ setup(name='guillotine',
       install_requires = [],
       tests_require = [],
       test_suite="guillotine.tests",
-      entry_points = """\
+      entry_points = """
+      [paste.filter_app_factory]
+      guillotine = guillotine:make_middleware
       """
       )

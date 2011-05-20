@@ -13,3 +13,7 @@ class Guillotine(object):
         self.app(environ, start_response)
         return []
 
+
+def make_middleware(app, global_conf, **config):
+    return Guillotine(app)
+
